@@ -45,9 +45,22 @@ public class CursorRightOfHintEditText extends RelativeLayout {
     private LinearLayout llETHint;
     private EditText editText;
 
+    /**
+     * 在构造方法里 填充child view;
+     * 在activity_main.xml里通过include引用child view; 都能完美实现；
+     * <com.gaos.edittextdemo.CursorRightOfHintEditText
+     * android:id="@+id/cursor_right_of_hint_edit_text"
+     * android:layout_width="match_parent"
+     * android:layout_height="wrap_content">
+     * <include layout="@layout/layout_curosr_right_of_hint_edittext"/>
+     * </com.gaos.edittextdemo.CursorRightOfHintEditText>
+     *
+     * @param context
+     * @param attrs
+     */
     public CursorRightOfHintEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
-        inflate(context, R.layout.layout_curosr_right_of_hint_edittext, this);
+//        inflate(context, R.layout.layout_curosr_right_of_hint_edittext, this);
     }
 
     @Override

@@ -8,5 +8,7 @@
     <com.gaos.edittextdemo.CursorRightOfHintEditText
         android:id="@+id/cursor_right_of_hint_edit_text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_curosr_right_of_hint_edittext"/>
+    </com.gaos.edittextdemo.CursorRightOfHintEditText>
 </LinearLayout>
